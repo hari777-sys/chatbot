@@ -46,8 +46,8 @@ def get_chatbot_response(prompt):
     return result['answer']
 
 def save_chat_history_to_s3():
-    bucket_name = 'mybothistory'
-    file_name = 'chat_history.txt'
+    bucket_name = 'your bucket name'
+    file_name = 'your filename'
 
     # Generate chat history text
     chat_text = "\n".join([f"User: {query}\nChatbot: {response}\n" for query, response in chat_history])
